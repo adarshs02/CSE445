@@ -25,7 +25,7 @@
   </Hotel>
   <Hotel Rating="3.8">
     <Name>Marriott Courtyard</Name>
-    <!-- ❌ Missing one Phone element -->
+    <!-- ❌ Missing Phone element -->
     <Address>
       <Number>601</Number>
       <Street>South Ash Ave</Street>
@@ -42,11 +42,11 @@
       <Street>North Scottsdale Rd</Street>
       <City>Tempe</City>
       <State>AZ</State>
-      <!-- ❌ No closing tag for Address -->
+      <!-- ❌ Missing </Address> -->
   </Hotel>
   <Hotel Rating="3.9">
     <Name>Aloft</Name>
-    <Name>Extra Name</Name> <!-- ❌ Two <Name> elements -->
+    <Name>Duplicate</Name> <!-- ❌ Two Name elements -->
     <Phone>602-222-3333</Phone>
     <Address>
       <Number>951</Number>

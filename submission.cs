@@ -19,7 +19,6 @@ namespace ConsoleApp1
         public static string xmlErrorURL = "https://adarshs02.github.io/CSE445/HotelsErrors.xml";
         public static string xsdURL = "https://adarshs02.github.io/CSE445/Hotels.xsd";
 
-
         public static void Main(string[] args)
         {
             string result;
@@ -37,7 +36,6 @@ namespace ConsoleApp1
             Console.WriteLine(result);
         }
 
-        // Q2.1 XML Schema Validation
         public static string Verification(string xmlUrl, string xsdUrl)
         {
             try
@@ -47,7 +45,6 @@ namespace ConsoleApp1
                 settings.ValidationType = ValidationType.Schema;
 
                 string errorMessage = "No Error";
-
                 settings.ValidationEventHandler += (sender, args) =>
                 {
                     errorMessage = args.Message;
@@ -66,7 +63,6 @@ namespace ConsoleApp1
             }
         }
 
-        // Q2.2 XML to JSON conversion
         public static string Xml2Json(string xmlUrl)
         {
             try
@@ -80,8 +76,7 @@ namespace ConsoleApp1
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(xmlContent);
 
-                string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented, true);
-
+                string jsonText = JsonConvert.SerializeXmlNode(doc.DocumentElement, Formatting.Indented, true);
                 return jsonText;
             }
             catch (Exception ex)

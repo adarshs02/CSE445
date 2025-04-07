@@ -1,59 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotel> <!-- ❌ Should be 'Hotels' -->
-  <Hotel Rating="4.2">
-    <Name>Westin</Name>
-    <Phone>480-968-8885</Phone>
-    <Phone>800-937-8461</Phone>
-    <Address NearestAirport="Sky Harbor">
+<Hotel>  <!-- 1.The root element name is Hotel, instead of Hotels -->
+  <Hotel _Rating="4.2">
+    <Name>The Westin Phoenix Downtown</Name>
+    <!-- 3.Missing Phone element -->
+    <Address _NearestAirport="Sky Harbor (PHX)">
       <Number>11</Number>
-      <Street>E 7th St</Street>
+      <Street>E. 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-  <Hotel> <!-- ❌ Missing required Rating attribute -->
-    <Name>Hilton Garden Inn</Name>
-    <Phone>602-555-1234</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>400</Number>
-      <Street>W University Dr</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-  <Hotel Rating="3.8">
-    <Name>Marriott Courtyard</Name>
-    <!-- ❌ Missing Phone element -->
+
+  <Hotel>
+    <Name>Arizona Biltmore</Name>
+    <Phone>602-955-6600</Phone>
+    <!-- 2.A required attribute is missing; -->
     <Address>
-      <Number>601</Number>
-      <Street>South Ash Ave</Street>
-      <City>Tempe</City>
+      <Number>2400</Number>
+      <Street>E Missouri Ave</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85281</Zip>
+      <Zip>85016</Zip>
     </Address>
   </Hotel>
-  <Hotel Rating="4.0">
-    <Name>Holiday Inn Express</Name>
-    <Phone>602-321-1111</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>1515</Number>
-      <Street>North Scottsdale Rd</Street>
-      <City>Tempe</City>
+
+  <Hotel>
+    <!-- 5.Duplicate Name elements -->
+    <Name>Found:RE Phoenix</Name>
+    <Name>Found:RE Duplicate</Name>
+    <Phone>602-875-9400</Phone>
+    <!-- 4.Invalid child element -->
+    <Address _NearestAirport="Sky Harbor (PHX)">
+      <Number>1100</Number>
+      <InvalidElement>This breaks XSD schema</InvalidElement>
+      <Street>N Central Ave</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <!-- ❌ Missing </Address> -->
+      <Zip>85004</Zip>
+    </Address>
   </Hotel>
-  <Hotel Rating="3.9">
-    <Name>Aloft</Name>
-    <Name>Duplicate</Name> <!-- ❌ Two Name elements -->
-    <Phone>602-222-3333</Phone>
-    <Address>
-      <Number>951</Number>
-      <Street>Mill Avenue</Street>
-      <City>Tempe</City>
+
+  <Hotel>
+    <Name>Hyatt Regency Phoenix</Name>
+    <Phone>602-252-1234</Phone>
+    <Address _NearestAirport="Sky Harbor (PHX)">
+      <Number>122</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85281</Zip>
+      <Zip>85004</Zip>
     </Address>
   </Hotel>
 </Hotel>

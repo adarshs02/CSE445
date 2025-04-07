@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel> <!-- ❌ Should be 'Hotels' -->
+  <Hotel Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  <Hotel> <!-- ❌ Missing required Rating attribute -->
+    <Name>Hilton Garden Inn</Name>
+    <Phone>602-555-1234</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>400</Number>
+      <Street>W University Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="3.8">
+    <Name>Marriott Courtyard</Name>
+    <!-- ❌ Missing one Phone element -->
+    <Address>
+      <Number>601</Number>
+      <Street>South Ash Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.0">
+    <Name>Holiday Inn Express</Name>
+    <Phone>602-321-1111</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>1515</Number>
+      <Street>North Scottsdale Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <!-- ❌ No closing tag for Address -->
+  </Hotel>
+  <Hotel Rating="3.9">
+    <Name>Aloft</Name>
+    <Name>Extra Name</Name> <!-- ❌ Two <Name> elements -->
+    <Phone>602-222-3333</Phone>
+    <Address>
+      <Number>951</Number>
+      <Street>Mill Avenue</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+</Hotel>

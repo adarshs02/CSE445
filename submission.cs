@@ -15,9 +15,10 @@ namespace ConsoleApp1
 {
     public class Program
     {
-        public static string xmlURL = "https://yourusername.github.io/Hotels.xml";           // Replace with actual URL
-        public static string xmlErrorURL = "https://yourusername.github.io/HotelsErrors.xml"; // Replace with actual URL
-        public static string xsdURL = "https://yourusername.github.io/Hotels.xsd";            // Replace with actual URL
+        public static string xmlURL = "https://adarshs02.github.io/CSE445/Hotels.xml";
+        public static string xmlErrorURL = "https://adarshs02.github.io/CSE445/HotelsErrors.xml";
+        public static string xsdURL = "https://adarshs02.github.io/CSE445/Hotels.xsd";
+
 
         public static void Main(string[] args)
         {

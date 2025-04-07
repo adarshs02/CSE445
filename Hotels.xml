@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-  <Hotel _Rating="4.2">
+  <Hotel Rating="4.2">
     <Name>The Westin Phoenix Downtown</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address NearestAirport="Sky Harbor (PHX)">
       <Number>11</Number>
       <Street>E. 7th St</Street>
       <City>Tempe</City>
@@ -13,12 +13,11 @@
     </Address>
   </Hotel>
 
-  <!-- Phoenix Hotels -->
-  <Hotel _Rating="4.5">
+  <Hotel Rating="4.5">
     <Name>Arizona Biltmore, A Waldorf Astoria Resort</Name>
     <Phone>602-955-6600</Phone>
     <Phone>602-381-7632</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address NearestAirport="Sky Harbor (PHX)">
       <Number>2400</Number>
       <Street>E Missouri Ave</Street>
       <City>Phoenix</City>
@@ -27,10 +26,10 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="4.0">
     <Name>Found:RE Phoenix</Name>
     <Phone>602-875-9400</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address NearestAirport="Sky Harbor (PHX)">
       <Number>1100</Number>
       <Street>N Central Ave</Street>
       <City>Phoenix</City>
@@ -39,11 +38,11 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="4.7">
+  <Hotel Rating="4.7">
     <Name>Royal Palms Resort and Spa</Name>
     <Phone>602-840-3610</Phone>
     <Phone>888-592-1217</Phone>
-    <Address _NearestAirport="Phoenix-Mesa Gateway (AZA)">
+    <Address NearestAirport="Phoenix-Mesa Gateway (AZA)">
       <Number>5200</Number>
       <Street>E Camelback Rd</Street>
       <City>Phoenix</City>
@@ -52,10 +51,10 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="4.1">
     <Name>Kimpton Hotel Palomar Phoenix Cityscape</Name>
     <Phone>602-253-6633</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address NearestAirport="Sky Harbor (PHX)">
       <Number>2</Number>
       <Street>E Jefferson St</Street>
       <City>Phoenix</City>
@@ -64,11 +63,11 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="8.8">
+  <Hotel Rating="4.8">
     <Name>Home2 Suites By Hilton Phoenix Airport North</Name>
     <Phone>602-612-4000</Phone>
     <Phone>602-612-4001</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address NearestAirport="Sky Harbor (PHX)">
       <Number>2335</Number>
       <Street>E University Dr</Street>
       <City>Phoenix</City>
@@ -77,11 +76,7 @@
     </Address>
   </Hotel>
 
-  <!-- 
-       CHANGED THIS ONE: Removed "_NearestAirport" from the Address below.
-       That way, at least one <Address> does NOT have the optional attribute.
-  -->
-  <Hotel>
+  <Hotel Rating="3.9">
     <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
     <Phone>602-222-1111</Phone>
     <Address>
@@ -93,11 +88,11 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="4.3">
+  <Hotel Rating="4.3">
     <Name>JW Marriott Phoenix Desert Ridge Resort</Name>
     <Phone>480-293-5000</Phone>
     <Phone>480-293-3600</Phone>
-    <Address _NearestAirport="Scottsdale Airport (SCF)">
+    <Address NearestAirport="Scottsdale Airport (SCF)">
       <Number>5350</Number>
       <Street>E Marriott Dr</Street>
       <City>Phoenix</City>
@@ -106,10 +101,10 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="4.0">
     <Name>Holiday Inn Express Phoenix Airport</Name>
     <Phone>602-275-6800</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address NearestAirport="Sky Harbor (PHX)">
       <Number>318</Number>
       <Street>N 44th St</Street>
       <City>Phoenix</City>
@@ -118,11 +113,11 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="4.6">
+  <Hotel Rating="4.6">
     <Name>The Clarendon Hotel and Spa</Name>
     <Phone>602-252-7363</Phone>
     <Phone>602-252-7373</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address NearestAirport="Sky Harbor (PHX)">
       <Number>401</Number>
       <Street>W Clarendon Ave</Street>
       <City>Phoenix</City>
